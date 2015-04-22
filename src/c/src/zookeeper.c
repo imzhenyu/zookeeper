@@ -40,9 +40,11 @@
 #include <assert.h>
 #include <stdarg.h>
 #include <limits.h>
-#include <unistd.h> // needed for _POSIX_MONOTONIC_CLOCK
 
 #ifndef _WIN32
+
+#include <unistd.h> // needed for _POSIX_MONOTONIC_CLOCK
+
 #include <sys/time.h>
 #include <sys/socket.h>
 #include <poll.h>
